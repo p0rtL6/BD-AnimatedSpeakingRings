@@ -1,0 +1,71 @@
+/**
+ * @name Animated Speaking Rings
+ * @version 1.0
+ * @description Adds a spinning ring to anybody speaking in a server
+ * @author p0rtL
+ * 
+ * @source https://github.com/p0rtL6/BD-AnimatedSpeakingRings
+ * @invite sRGX5VRwzQ
+ */
+/*
+───╔═══╗─╔╗╔╗───
+───║╔═╗║╔╝╚╣║───
+╔══╣║║║╠╩╗╔╣║───
+║╔╗║║║║║╔╣║║║─╔╗
+║╚╝║╚═╝║║║╚╣╚═╝║
+║╔═╩═══╩╝╚═╩═══╝
+║║──────────────
+╚╝──────────────
+###################################################################################################
+p0rtL#6592 retains the full rights to this code.
+You are not allowed to redistribute this theme or any part of it as your own. That means do not post an edited version of this theme anywhere.
+You are allowed to edit the theme for personal use only.
+This theme is meant to be used with a plugin to edit profile pictures, such as Edit Users by DevilBro (https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/EditUsers/)
+#################################################################################################
+*/
+:root{
+  --gradient1: #E60083;
+  --gradient2: #0083e6;
+  --gradientangle: 45deg
+}
+
+
+.avatar-3tNQiO.avatarSpeaking-2IGMRN {
+  box-shadow: inset 0 0 0 0px #00E663,
+    inset 0 0 0 0px var(--background-secondary);
+}
+
+.voiceUser-1K6Xox .avatar-3tNQiO.avatarSpeaking-2IGMRN::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 28px;
+  width: 28px;
+  margin: -2px 0 0 -2px;
+  border-radius: 50%;
+  background: linear-gradient(var(--gradientangle), var(--gradient1) 0%, var(--gradient2) 100%);
+  animation: rotate-speaking 1s linear infinite;
+}
+
+@keyframes rotate-speaking {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.avatar-3tNQiO[style*="mbotdisc"]::after {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: 1;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+
+.avatarSpeaking-2IGMRN[style*="mbotdisc"] {
+  animation: rotate-speaking 1s linear infinite;
+}
