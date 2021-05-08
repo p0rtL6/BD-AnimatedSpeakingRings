@@ -1,6 +1,6 @@
 /**
  * @name Animated Speaking Rings
- * @version 1.1
+ * @version 1.2
  * @description Adds a spinning ring to anybody speaking in a server
  * @author p0rtL
  * 
@@ -18,8 +18,6 @@
 ╚╝──────────────
 ###################################################################################################
 p0rtL#6592 retains the full rights to this code.
-You are not allowed to redistribute this theme or any part of it as your own. That means do not post an edited version of this theme anywhere.
-You are allowed to edit the theme for personal use only.
 Lots of thanks to Mixter213#5731 for much help with this theme
 This theme is meant to be used with a plugin to edit profile pictures, such as Edit Users by DevilBro (https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/EditUsers/)
 #################################################################################################
@@ -46,6 +44,23 @@ This theme is meant to be used with a plugin to edit profile pictures, such as E
   border-radius: 50%;
   background: linear-gradient(var(--gradientangle), var(--gradient1) 0%, var(--gradient2) 100%);
   animation: rotate-speaking 1s linear infinite;
+}
+
+.callAvatarMask-1SLlRi {overflow:  visible;}
+.callAvatarMask-1SLlRi foreignObject {overflow: visible; mask: none}
+.voiceAvatar-14IynY {z-index: 1; transform: translateZ(1px);}
+.border-Jn5IOt.speaking-B2MXPi {box-shadow: none}
+.border-Jn5IOt.speaking-B2MXPi::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #E60083 0%, #0083e6 100%);
+    animation: rotate-speaking 1s linear infinite;
 }
 
 @keyframes rotate-speaking {
