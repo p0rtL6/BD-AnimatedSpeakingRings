@@ -25,7 +25,8 @@ This theme is meant to be used with a plugin to edit profile pictures, such as E
 :root{
   --gradient1: #E60083;
   --gradient2: #0083e6;
-  --gradientangle: 45deg
+  --gradientangle: 45deg;
+  --dmvoicebgcolor: #18191c
 }
 
 
