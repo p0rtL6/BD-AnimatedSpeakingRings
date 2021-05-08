@@ -50,10 +50,10 @@ This theme is meant to be used with a plugin to edit profile pictures, such as E
 .callAvatarMask-1SLlRi {overflow:  visible;}
 .callAvatarMask-1SLlRi foreignObject {overflow: visible; mask: none;}
 .voiceAvatar-14IynY {z-index: 1; transform: translateZ(1px);}
-.status-1WEaea {
-  z-index: 1;
-  transform: translateZ(1px);
-}
+/* vvv DISABLE ME IF YOU HAVE A THEME THAT CHANGES THE BACKGROUND vvv */
+.status-1WEaea {border: 4px solid #18191c; margin: 0px -4px -4px 0px;}
+/* ^^^ DISABLE ME IF YOU HAVE A THEME THAT CHANGES THE BACKGROUND ^^^ */
+.status-1WEaea {z-index: 1; transform: translateZ(1px);}
 .border-Jn5IOt.speaking-B2MXPi {box-shadow: none}
 .border-Jn5IOt.speaking-B2MXPi::before {
     z-index: -1;
