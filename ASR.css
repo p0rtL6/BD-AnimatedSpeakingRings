@@ -1,11 +1,3 @@
-:root{
-  --gradient1: #E60083;
-  --gradient2: #0083e6;
-  --gradientangle: 45deg;
-  --dmvoicebgcolor: #18191c
-}
-
-
 .avatar-3tNQiO.avatarSpeaking-2IGMRN {
   box-shadow: inset 0 0 0 0px #00E663,
     inset 0 0 0 0px var(--background-secondary);
