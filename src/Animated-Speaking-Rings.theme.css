@@ -1,0 +1,33 @@
+/**
+ * @name Animated Speaking Rings
+ * @version 1.2
+ * @description Adds a spinning ring to anybody speaking in a server
+ * @author p0rtL
+ * 
+ * @source https://github.com/p0rtL6/BD-AnimatedSpeakingRings
+ * @invite sRGX5VRwzQ
+ */
+/*
+───╔═══╗─╔╗╔╗───
+───║╔═╗║╔╝╚╣║───
+╔══╣║║║╠╩╗╔╣║───
+║╔╗║║║║║╔╣║║║─╔╗
+║╚╝║╚═╝║║║╚╣╚═╝║
+║╔═╩═══╩╝╚═╩═══╝
+║║──────────────
+╚╝──────────────
+###################################################################################################
+p0rtL#6592 retains the full rights to this code.
+Lots of thanks to Mixter213#5731 for much help with this theme
+This theme is meant to be used with a plugin to edit profile pictures, such as Edit Users by DevilBro (https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/EditUsers/)
+#################################################################################################
+*/
+
+@import url('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/src/base.css');
+
+:root{
+  --gradient1: #E60083;
+  --gradient2: #0083e6;
+  --gradientangle: 45deg;
+  --dmvoicebgcolor: #18191c
+}
