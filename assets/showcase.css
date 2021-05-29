@@ -1,0 +1,95 @@
+:root{
+  --gradient1:  #0575E6;
+  --gradient2:  #00F260;
+  --gradientangle: 45deg;
+  --dmvoicebgcolor: #18191c
+}
+
+#user1 {
+	position: absolute;
+	z-index: 1;
+	left: 2%;
+	top: 0%;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-size: 100%;
+	box-shadow: inset 0 0 0 4px #3ba55c, inset 0 0 0 6px #292b2f;
+}
+
+#username1 {
+	font-size: 100px;
+	position: absolute;
+	left: 15%;
+	top: 0%;
+	background: linear-gradient(90deg, rgba(5, 117, 230, 1) 0%, rgba(0, 242, 96, 1) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#user2 {
+	position: absolute;
+	z-index: 1;
+	left: 2%;
+	top: 20%;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-size: 100%;
+}
+
+#user2top {
+	position: absolute;
+	z-index: 10;
+	left: 2%;
+	top: 20%;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-size: 100%;
+}
+
+#user2::before {
+	position: absolute;
+	content: "";
+	z-index: -1;
+	left: 2%;
+	top: 20%;
+	border-radius: 50%;
+	width: 110px;
+	height: 110px;
+	margin: -25px 0 0 -7px;
+	background: linear-gradient(var(--gradientangle), var(--gradient1) 0%, var(--gradient2) 100%);
+  	animation: rotate-speaking 1s linear infinite;
+}
+
+#username2 {
+	font-size: 100px;
+	position: absolute;
+	left: 15%;
+	top: 20%;
+	background: linear-gradient(90deg, rgba(5, 117, 230, 1) 0%, rgba(0, 242, 96, 1) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#arrow1 {
+	transform: rotate(90deg);
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	left: 20%;
+	top: 12%;
+	fill: gray;
+}
+
+@keyframes rotate-speaking {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
