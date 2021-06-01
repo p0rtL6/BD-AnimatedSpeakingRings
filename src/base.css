@@ -36,32 +36,6 @@
     animation: rotate-speaking 1s linear infinite;
 }
 
-.border-3dQmSY.speaking-WDn8Wm {
-  box-shadow: none;
-}
-
-.border-3dQmSY.speaking-WDn8Wm::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  width: 200%;
-  height: 250%;
-  top: -75%;
-  left: -50%;
-  overflow: show !important;
-  background: linear-gradient(var(--gradientangle), var(--gradient1) 0%, var(--gradient2) 100%);
-  animation: rotate-speaking 1s linear infinite;
-}
-
-.content-2Sfaij {
-  z-index: 1;
-  clip-path: inset(1% 1% 1% 1% round 8px) !important; 
-}
-
-.tile-2naSqK {
-  background-color: var(--backgroundColor02);
-}
-
 @keyframes rotate-speaking {
   from {
     transform: rotate(0);
