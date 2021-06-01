@@ -15,6 +15,25 @@
   animation: rotate-speaking 1s linear infinite;
 }
 
+.avatarSpeaking-2c8-9i {
+  box-shadow: none;
+}
+
+.avatar-VxgULZ {
+  transform: translateZ(1px);
+}
+
+.avatarSpeaking-2c8-9i::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 30px;
+  width: 30px;
+  margin: 1px 0 0 1px;
+  border-radius: 50%;
+  background: linear-gradient(var(--gradientangle), var(--gradient1) 0%, var(--gradient2) 100%);
+  animation: rotate-speaking 1s linear infinite;
+}
 
 .callAvatarMask-1SLlRi {overflow:  visible;}
 .callAvatarMask-1SLlRi foreignObject {overflow: visible; mask: none;}
