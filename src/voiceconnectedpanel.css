@@ -1,0 +1,15 @@
+.avatar-3Heyg_.speaking-3dBKhR {
+  box-shadow: none;
+}
+
+.avatar-3Heyg_.speaking-3dBKhR::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 28px;
+  width: 28px;
+  margin: -2px 0 0 -2px;
+  border-radius: 50%;
+  background: linear-gradient(var(--gradientangle), var(--gradient1) 0%, var(--gradient2) 100%);
+  animation: rotate-speaking 1s linear infinite;
+}
