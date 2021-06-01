@@ -1,7 +1,7 @@
 /**
  * @name Animated Speaking Rings
  * @version 1.2
- * @description Adds a spinning ring to anybody speaking in a server
+ * @description Adds a spinning ring to replace the normal green ring when people speak
  * @author p0rtL
  * 
  * @source https://github.com/p0rtL6/BD-AnimatedSpeakingRings
@@ -16,15 +16,13 @@
 ║╔═╩═══╩╝╚═╩═══╝
 ║║──────────────
 ╚╝──────────────
-###################################################################################################
-p0rtL#6592 retains the full rights to this code.
-Lots of thanks to Mixter213#5731 for much help with this theme
-This theme is meant to be used with a plugin to edit profile pictures, such as Edit Users by DevilBro (https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/EditUsers/)
-#################################################################################################
 */
 
-@import url('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/src/base.css'); /* Normal Version */
-@import url('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/src/baseradial.css'); /* RadialStatus Version */
+@import url('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/src/base.css'); /* The base speaking rings */
+@import url('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/src/voiceconnectedpanel.css'); /* The voice connected panel */
+@import url('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/src/statuspanel.css'); /* The user status panel (normal) */
+@import url('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/src/statuspanelradial.css'); /* The user status panel (RadialStatus) */
+@import url('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/src/bigusers.css'); /* The fullscreen user panels */
 
 :root{
   --gradient1:  #0575E6;
