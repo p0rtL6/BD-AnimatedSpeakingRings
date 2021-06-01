@@ -21,7 +21,12 @@
 
 .avatarWrapper-2yR4wp .avatar-VxgULZ {
   transform: translateZ(1px);
+  border-radius: 50%;
+  margin: var(--nonradialmar);
+  width: var(--nonradialdim);
+  height: var(--nonradialdim);
 }
+
 
 .avatarSpeaking-2c8-9i::before {
   content: "";
