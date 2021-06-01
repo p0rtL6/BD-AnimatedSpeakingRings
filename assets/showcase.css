@@ -8,11 +8,11 @@
 #user1 {
 	position: absolute;
 	z-index: 1;
-	left: 50px;
-	top: 20px;
+	left: 300px;
+	top: 220px;
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
+	width: 500px;
+	height: 500px;
 	background-size: 100%;
 	box-shadow: inset 0 0 0 4px #3ba55c, inset 0 0 0 6px #292b2f;
 }
@@ -20,22 +20,22 @@
 #user2 {
 	position: absolute;
 	z-index: 1;
-	left: 240px;
-	top: 20px;
+	left: 1140px;
+	top: 220px;
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
+	width: 500px;
+	height: 500px;
 	background-size: 100%;
 }
 
 #user2top {
 	position: absolute;
 	z-index: 1;
-	left: 240px;
-	top: 20px;
+	left: 1140px;
+	top: 220px;
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
+	width: 500px;
+	height: 500px;
 	background-size: 100%;
 }
 
@@ -44,8 +44,8 @@
 	content: "";
 	z-index: -1;
 	border-radius: 50%;
-	width: 110px;
-	height: 110px;
+	width: 510px;
+	height: 510px;
 	margin: -5px 0 0 -5px;
 	background: linear-gradient(var(--gradientangle), var(--gradient1) 0%, var(--gradient2) 100%);
   	animation: rotate-speaking 1s linear infinite;
@@ -53,10 +53,10 @@
 
 #arrow1 {
 	position: absolute;
-	width: 75px;
-	height: 75px;
-	left: 155px;
-	top: 35px;
+	width: 220px;
+	height: 220px;
+	left: 860px;
+	top: 350px;
 	fill: var(--gradient1);	
 }
 
