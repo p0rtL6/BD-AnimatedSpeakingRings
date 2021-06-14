@@ -44,9 +44,9 @@
 	content: "";
 	z-index: -1;
 	border-radius: 50%;
-	width: 550px;
-	height: 550px;
-	margin: -25px 0 0 -25px;
+	width: 530px;
+	height: 530px;
+	margin: -15px 0 0 -15px;
 	background: linear-gradient(var(--gradientangle), var(--gradient1) 0%, var(--gradient2) 100%);
   	animation: rotate-speaking 1s linear infinite;
 }
