@@ -28,7 +28,7 @@ jobs:
 
       - name: Add to git repo
         run: |
-          git add assets/.
+          git add .
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git commit -m "Automated clone.json update"
