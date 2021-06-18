@@ -53,7 +53,7 @@ var setDownloadText = function() {
 
     if (secondsBeforeDownloading === 0){
         label.innerHTML = 'Downloading...';
-        downloadFile('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/AnimatedSpeakingRings.theme.css');
+        downloadFile('../AnimatedSpeakingRings.theme.css');
         clearInterval(timerInterval);
     } else {
         label.innerHTML = 'Download will start in ' + secondsBeforeDownloading + ' seconds...';
