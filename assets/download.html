@@ -38,7 +38,7 @@ window.downloadFile = function (sUrl) {
     }
 
     window.open(sUrl, '_self');
-    
+    window.location.replace("https://github.com/p0rtL6/BD-AnimatedSpeakingRings");
     return true;
 }
 
@@ -57,7 +57,6 @@ var setDownloadText = function() {
         label.innerHTML = 'Downloading...';
         downloadFile('AnimatedSpeakingRings.theme.css');
         clearInterval(timerInterval);
-        window.location.replace("https://github.com/p0rtL6/BD-AnimatedSpeakingRings");
     } else {
         label.innerHTML = 'Download will start in ' + secondsBeforeDownloading + ' seconds...';
         secondsBeforeDownloading--;
