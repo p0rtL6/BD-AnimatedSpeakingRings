@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html>
-   <body>
-      <style>
-         p {
-         color: green;
-         }
-      </style>
-      <p>How to trigger a file download when 
-         clicking an HTML button or JavaScript?
-      <p>
-         <a href="https://p0rtl6.github.io/BD-AnimatedSpeakingRings/AnimatedSpeakingRings.theme.css" download="AnimatedSpeakingRings.theme.css">
-         <button type="button">Download</button>
-         </a>
-   </body>
-</html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        html {
+            font-family: 'Helvetica-Neue', 'Helvetica', 'Arial';
+        }
+    </style>
+        <title>Download File</title>
+        <script src="test_files/download.js"></script><style type="text/css" id="custom-scrollbar-css">* {
+    scrollbar-width: thin !important;
+    scrollbar-color: #00d1b2ff #f0f0f0ff !important;
+}</style>
+    </head>
+    <body>
+        <p id="downloadLabel">Downloading...</p>
+        <script>
+            var secondsBeforeDownloading = 0;
+
+            var timerInterval = setInterval('setDownloadText()', 1000);
+
+            var setDownloadText = function() {
+                var label = document.getElementById('downloadLabel');
+
+                if (secondsBeforeDownloading === 0){
+                    label.innerHTML = 'Downloading...';
+                    downloadFile('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/AnimatedSpeakingRings.theme.css');
+                    clearInterval(timerInterval);
+                } else {
+                    label.innerHTML = "Downloading...";
+                }
+            }
+        </script>
+
+        <!-- AddThis Button BEGIN -->
+        <div><!-- AddThis Button BEGIN --> <div class="addthis_toolbox addthis_default_style addthis_32x32_style"> <a class="addthis_button_preferred_1"></a> <a class="addthis_button_preferred_2"></a> <a class="addthis_button_preferred_3"></a> <a class="addthis_button_preferred_4"></a> <a class="addthis_button_compact"></a> <a class="addthis_counter addthis_bubble_style"></a> </div> <script src="">var addthis_config = {'data_track_addressbar':true};</script> <script src="test_files/addthis_widget_002.js"></script> <!-- AddThis Button END --></div>
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+        <script type="text/javascript" src="test_files/addthis_widget.js"></script>
+        <!-- AddThis Button END -->
+    
+</body></html>
