@@ -57,7 +57,7 @@ var setDownloadText = function() {
         label.innerHTML = 'Downloading...';
         downloadFile('AnimatedSpeakingRings.theme.css');
         clearInterval(timerInterval);
-        label.innerHTML = 'Downloaded! Feel free to close this tab';
+        window.location.replace("https://github.com/p0rtL6/BD-AnimatedSpeakingRings");
     } else {
         label.innerHTML = 'Download will start in ' + secondsBeforeDownloading + ' seconds...';
         secondsBeforeDownloading--;
