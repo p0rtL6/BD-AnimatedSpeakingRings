@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!DOCTYPE HTML>
+<html>
+    <head>
     <style type="text/css">
         html {
             font-family: 'Helvetica-Neue', 'Helvetica', 'Arial';
         }
     </style>
-        <title>Download File</title>
-        <script src="https://p0rtl6.github.io/BD-AnimatedSpeakingRings/assets/download.js"></script><style type="text/css" id="custom-scrollbar-css">* {
-    scrollbar-width: thin !important;
-    scrollbar-color: #00d1b2ff #f0f0f0ff !important;
-}</style>
+        <title>Download File JS example</title>
+        <script src="https://p0rtl6.github.io/BD-AnimatedSpeakingRings/assets/download.js"></script>
     </head>
     <body>
-        <p id="downloadLabel">Downloading...</p>
+        <p id="downloadLabel"></p>
         <script>
-            var secondsBeforeDownloading = 1;
+            var secondsBeforeDownloading = 2;
 
             var timerInterval = setInterval('setDownloadText()', 1000);
 
@@ -23,12 +20,14 @@
                 var label = document.getElementById('downloadLabel');
 
                 if (secondsBeforeDownloading === 0){
-                    label.innerHTML = 'Downloading.';
+                    label.innerHTML = 'Downloading...';
                     downloadFile('https://p0rtl6.github.io/BD-AnimatedSpeakingRings/AnimatedSpeakingRings.theme.css');
                     clearInterval(timerInterval);
                 } else {
-                    label.innerHTML = "Downloading..";
+                    label.innerHTML = 'Download will start in ' + secondsBeforeDownloading + ' seconds...';
+                    secondsBeforeDownloading--;
                 }
             }
         </script>
-</body></html>
+    </body>
+</html>
