@@ -57,7 +57,7 @@ var setDownloadText = function() {
         label.innerHTML = 'Downloading...';
         downloadFile('AnimatedSpeakingRings.theme.css');
         clearInterval(timerInterval);
-        window.close();
+        label.innerHTML = 'Downloaded! Feel free to close this tab';
     } else {
         label.innerHTML = 'Download will start in ' + secondsBeforeDownloading + ' seconds...';
         secondsBeforeDownloading--;
