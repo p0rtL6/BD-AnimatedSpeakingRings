@@ -12,7 +12,7 @@ window.downloadFile = function (sUrl) {
     }
 
     //If in Chrome or Safari - download via virtual link click
-    if (window.downloadFile.isChrome || window.downloadFile.isSafari || userAgentString.indexOf("Firefox") > -1) {
+    if (window.downloadFile.isChrome || window.downloadFile.isSafari || navigator.userAgent.indexOf("Firefox") > -1) {
         //Creating new link node.
         var link = document.createElement('a');
         link.href = sUrl;
