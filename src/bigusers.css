@@ -15,7 +15,7 @@
   animation: rotate-speaking 1s linear infinite;
 }
 
-.content-2Sfaij {
+.content-2Sfaij:not(.media-engine-video) {
   z-index: 1;
   clip-path: inset(1% 1% 1% 1% round 8px) !important; 
 }
