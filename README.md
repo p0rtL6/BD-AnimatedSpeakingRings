@@ -1,3 +1,4 @@
+# !! THIS PLUGIN IS UNMAINTAINED AND NO LONGER WORKS!!
 # Animated Speaking Rings
 A theme for BetterDiscord that adds animated rings around people speaking.
 ---
